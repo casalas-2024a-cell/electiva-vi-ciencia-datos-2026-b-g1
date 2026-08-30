@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="640" fill="#ffffff"/>
+
+  <text x="600" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">
+    Los 4 tipos de analítica aplicados a retrasos de última milla
+  </text>
+  <text x="600" y="53" text-anchor="middle" font-size="13.5" fill="#475569">
+    La madurez analítica crece de izquierda a derecha: más valor, más datos y técnicas requeridas
+  </text>
+
+  <!-- maturity arrow -->
+  <line x1="60" y1="76" x2="1140" y2="76" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="1140" y="70" text-anchor="end" font-size="11" fill="#64748b">mayor madurez / valor →</text>
+
+  <!-- 4 columns x: 40,320,600,880 width 260 -->
+  <g font-size="12.5">
+
+    <!-- Descriptiva -->
+    <rect x="40" y="100" width="260" height="270" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+    <text x="170" y="128" text-anchor="middle" font-weight="700" font-size="15" fill="#1d4ed8">Descriptiva</text>
+    <text x="170" y="148" text-anchor="middle" font-size="11.5" fill="#1e3a8a" font-style="italic">¿Qué pasó?</text>
+    <rect x="54" y="160" width="232" height="90" rx="6" fill="#dbeafe"/>
+    <text x="170" y="180" text-anchor="middle" font-size="11" fill="#1e3a8a" font-weight="700">Pregunta:</text>
+    <text x="170" y="198" text-anchor="middle" font-size="10.5" fill="#1e3a8a">¿Cuál es la tasa de</text>
+    <text x="170" y="213" text-anchor="middle" font-size="10.5" fill="#1e3a8a">retraso histórica por</text>
+    <text x="170" y="228" text-anchor="middle" font-size="10.5" fill="#1e3a8a">transportista, clima y</text>
+    <text x="170" y="243" text-anchor="middle" font-size="10.5" fill="#1e3a8a">tipo de vehículo?</text>
+    <text x="170" y="270" text-anchor="middle" font-size="10.5" fill="#1e40af">Técnica: reportes y</text>
+    <text x="170" y="285" text-anchor="middle" font-size="10.5" fill="#1e40af">agregaciones (BI)</text>
+    <text x="170" y="305" text-anchor="middle" font-size="10.5" fill="#1e40af">ML: no aplica</text>
+    <text x="170" y="325" text-anchor="middle" font-size="10.5" fill="#1e40af">(estadística descriptiva)</text>
+
+    <!-- Diagnostica -->
+    <rect x="320" y="100" width="260" height="270" rx="12" fill="#fdf2f8" stroke="#db2777" stroke-width="1.6"/>
+    <text x="450" y="128" text-anchor="middle" font-weight="700" font-size="15" fill="#be185d">Diagnóstica</text>
+    <text x="450" y="148" text-anchor="middle" font-size="11.5" fill="#831843" font-style="italic">¿Por qué pasó?</text>
+    <rect x="334" y="160" width="232" height="90" rx="6" fill="#fce7f3"/>
+    <text x="450" y="180" text-anchor="middle" font-size="11" fill="#831843" font-weight="700">Pregunta:</text>
+    <text x="450" y="198" text-anchor="middle" font-size="10.5" fill="#831843">¿Por qué el transportista</text>
+    <text x="450" y="213" text-anchor="middle" font-size="10.5" fill="#831843">B tiene más retrasos en</text>
+    <text x="450" y="228" text-anchor="middle" font-size="10.5" fill="#831843">moto bajo lluvia que los</text>
+    <text x="450" y="243" text-anchor="middle" font-size="10.5" fill="#831843">demás transportistas?</text>
+    <text x="450" y="270" text-anchor="middle" font-size="10.5" fill="#9d174d">Técnica: análisis de</text>
+    <text x="450" y="285" text-anchor="middle" font-size="10.5" fill="#9d174d">correlación / causa raíz</text>
+    <text x="450" y="305" text-anchor="middle" font-size="10.5" fill="#9d174d">ML: no aplica</text>
+    <text x="450" y="325" text-anchor="middle" font-size="10.5" fill="#9d174d">(análisis exploratorio)</text>
+
+    <!-- Predictiva -->
+    <rect x="600" y="100" width="260" height="270" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.6"/>
+    <text x="730" y="128" text-anchor="middle" font-weight="700" font-size="15" fill="#b45309">Predictiva</text>
+    <text x="730" y="148" text-anchor="middle" font-size="11.5" fill="#78350f" font-style="italic">¿Qué pasará?</text>
+    <rect x="614" y="160" width="232" height="90" rx="6" fill="#fef3c7"/>
+    <text x="730" y="180" text-anchor="middle" font-size="11" fill="#78350f" font-weight="700">Pregunta:</text>
+    <text x="730" y="198" text-anchor="middle" font-size="10.5" fill="#78350f">Dado transportista, clima</text>
+    <text x="730" y="213" text-anchor="middle" font-size="10.5" fill="#78350f">y vehículo de un envío</text>
+    <text x="730" y="228" text-anchor="middle" font-size="10.5" fill="#78350f">nuevo, ¿cuál es la</text>
+    <text x="730" y="243" text-anchor="middle" font-size="10.5" fill="#78350f">probabilidad de retraso?</text>
+    <text x="730" y="270" text-anchor="middle" font-size="10.5" fill="#92400e" font-weight="700">ML supervisado</text>
+    <text x="730" y="285" text-anchor="middle" font-size="10.5" fill="#92400e">(clasificación binaria:</text>
+    <text x="730" y="300" text-anchor="middle" font-size="10.5" fill="#92400e">a tiempo / retrasado),</text>
+    <text x="730" y="315" text-anchor="middle" font-size="10.5" fill="#92400e">entrenado con etiquetas</text>
+    <text x="730" y="330" text-anchor="middle" font-size="10.5" fill="#92400e">históricas de Kaggle</text>
+
+    <!-- Prescriptiva -->
+    <rect x="880" y="100" width="260" height="270" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+    <text x="1010" y="128" text-anchor="middle" font-weight="700" font-size="15" fill="#6d28d9">Prescriptiva</text>
+    <text x="1010" y="148" text-anchor="middle" font-size="11.5" fill="#4c1d95" font-style="italic">¿Qué debo hacer?</text>
+    <rect x="894" y="160" width="232" height="90" rx="6" fill="#ede9fe"/>
+    <text x="1010" y="180" text-anchor="middle" font-size="11" fill="#4c1d95" font-weight="700">Pregunta:</text>
+    <text x="1010" y="198" text-anchor="middle" font-size="10.5" fill="#4c1d95">Si el riesgo de retraso es</text>
+    <text x="1010" y="213" text-anchor="middle" font-size="10.5" fill="#4c1d95">alto, ¿a qué transportista/</text>
+    <text x="1010" y="228" text-anchor="middle" font-size="10.5" fill="#4c1d95">vehículo debo reasignar</text>
+    <text x="1010" y="243" text-anchor="middle" font-size="10.5" fill="#4c1d95">la ruta para minimizarlo?</text>
+    <text x="1010" y="270" text-anchor="middle" font-size="10.5" fill="#5b21b6" font-weight="700">ML no supervisado</text>
+    <text x="1010" y="285" text-anchor="middle" font-size="10.5" fill="#5b21b6">(clustering de rutas/</text>
+    <text x="1010" y="300" text-anchor="middle" font-size="10.5" fill="#5b21b6">perfiles de riesgo) +</text>
+    <text x="1010" y="315" text-anchor="middle" font-size="10.5" fill="#5b21b6">optimización de</text>
+    <text x="1010" y="330" text-anchor="middle" font-size="10.5" fill="#5b21b6">asignación</text>
+
+  </g>
+
+  <!-- Ethics panel -->
+  <rect x="40" y="400" width="1100" height="210" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="60" y="428" font-size="15" font-weight="700" fill="#0f172a">Riesgo ético identificado: sesgo heredado por transportista</text>
+
+  <text x="60" y="454" font-size="12.5" font-weight="700" fill="#9f1239">Riesgo:</text>
+  <text x="60" y="472" font-size="12" fill="#1e293b">Si un transportista atiende sistemáticamente zonas con peor infraestructura vial, el modelo puede aprender a "penalizarlo"</text>
+  <text x="60" y="488" font-size="12" fill="#1e293b">como si fuera menos confiable, cuando en realidad el problema es la zona, no su desempeño — perjudicando sus futuras asignaciones.</text>
+
+  <text x="60" y="518" font-size="12.5" font-weight="700" fill="#166534">Mitigación:</text>
+  <text x="60" y="536" font-size="12" fill="#1e293b">1) Incluir la zona/ruta como variable explícita del modelo, para separar el efecto de la zona del efecto del transportista.</text>
+  <text x="60" y="552" font-size="12" fill="#1e293b">2) Auditar las predicciones y tasas de error del modelo desagregadas por transportista, buscando disparidades sistemáticas.</text>
+  <text x="60" y="568" font-size="12" fill="#1e293b">3) Mantener explicabilidad (ej. importancia de variables) para que un supervisor pueda revisar por qué se penalizó a un transportista</text>
+  <text x="60" y="584" font-size="12" fill="#1e293b">   antes de usar esa señal para decisiones de asignación o desempeño laboral.</text>
+
+  <text x="600" y="628" text-anchor="middle" font-size="11" fill="#94a3b8">
+    Elaboración propia — basado en Bertsimas &amp; Kallus (2020); Jordan &amp; Mitchell (2015); Mehrabi et al. (2021)
+  </text>
+</svg>
