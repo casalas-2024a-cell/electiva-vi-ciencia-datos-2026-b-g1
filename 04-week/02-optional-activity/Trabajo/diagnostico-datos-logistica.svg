@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowD" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <linearGradient id="barD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="520" fill="#ffffff"/>
+
+  <text x="600" y="32" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">
+    Ciclo de vida del proyecto — Diagnóstico de datos de un proceso
+  </text>
+  <text x="600" y="53" text-anchor="middle" font-size="13" fill="#475569">
+    Caso: retrasos en entregas de última milla (transportista × clima × vehículo)
+  </text>
+
+  <rect x="40" y="70" width="1120" height="6" rx="3" fill="url(#barD)"/>
+
+  <!-- 6 stages, width 170, gap ~16, start x=40 -->
+  <g font-size="12">
+
+    <!-- 1 Pregunta -->
+    <rect x="40" y="100" width="170" height="190" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
+    <text x="125" y="126" text-anchor="middle" font-weight="700" fill="#0e7490" font-size="13.5">1. Pregunta</text>
+    <text x="125" y="150" text-anchor="middle" font-size="10.5" fill="#155e63">¿Qué combinación</text>
+    <text x="125" y="165" text-anchor="middle" font-size="10.5" fill="#155e63">de transportista,</text>
+    <text x="125" y="180" text-anchor="middle" font-size="10.5" fill="#155e63">clima y vehículo</text>
+    <text x="125" y="195" text-anchor="middle" font-size="10.5" fill="#155e63">genera más retrasos</text>
+    <text x="125" y="210" text-anchor="middle" font-size="10.5" fill="#155e63">y podemos</text>
+    <text x="125" y="225" text-anchor="middle" font-size="10.5" fill="#155e63">anticiparlos?</text>
+
+    <!-- 2 Obtener -->
+    <rect x="226" y="100" width="170" height="190" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="311" y="126" text-anchor="middle" font-weight="700" fill="#1d4ed8" font-size="13.5">2. Obtener</text>
+    <text x="311" y="150" text-anchor="middle" font-size="10.5" fill="#1e3a8a">Descargar dataset</text>
+    <text x="311" y="165" text-anchor="middle" font-size="10.5" fill="#1e3a8a">Kaggle (25 000</text>
+    <text x="311" y="180" text-anchor="middle" font-size="10.5" fill="#1e3a8a">entregas) y conectar</text>
+    <text x="311" y="195" text-anchor="middle" font-size="10.5" fill="#1e3a8a">API de clima y GPS</text>
+    <text x="311" y="210" text-anchor="middle" font-size="10.5" fill="#1e3a8a">en tiempo real</text>
+
+    <!-- 3 Limpiar -->
+    <rect x="412" y="100" width="170" height="190" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+    <text x="497" y="126" text-anchor="middle" font-weight="700" fill="#854d0e" font-size="13.5">3. Limpiar</text>
+    <text x="497" y="150" text-anchor="middle" font-size="10.5" fill="#713f12">Detectar nulos,</text>
+    <text x="497" y="165" text-anchor="middle" font-size="10.5" fill="#713f12">duplicados y</text>
+    <text x="497" y="180" text-anchor="middle" font-size="10.5" fill="#713f12">discrepancias entre</text>
+    <text x="497" y="195" text-anchor="middle" font-size="10.5" fill="#713f12">clima etiquetado y</text>
+    <text x="497" y="210" text-anchor="middle" font-size="10.5" fill="#713f12">clima real de la API</text>
+
+    <!-- 4 Analizar -->
+    <rect x="598" y="100" width="170" height="190" rx="10" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.5"/>
+    <text x="683" y="126" text-anchor="middle" font-weight="700" fill="#7e22ce" font-size="13.5">4. Analizar</text>
+    <text x="683" y="150" text-anchor="middle" font-size="10.5" fill="#6b21a8">Descriptivo: tasas de</text>
+    <text x="683" y="165" text-anchor="middle" font-size="10.5" fill="#6b21a8">retraso por factor;</text>
+    <text x="683" y="180" text-anchor="middle" font-size="10.5" fill="#6b21a8">predictivo: modelo</text>
+    <text x="683" y="195" text-anchor="middle" font-size="10.5" fill="#6b21a8">de probabilidad de</text>
+    <text x="683" y="210" text-anchor="middle" font-size="10.5" fill="#6b21a8">retraso por envío</text>
+
+    <!-- 5 Visualizar -->
+    <rect x="784" y="100" width="170" height="190" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="869" y="126" text-anchor="middle" font-weight="700" fill="#15803d" font-size="13.5">5. Visualizar</text>
+    <text x="869" y="150" text-anchor="middle" font-size="10.5" fill="#166534">Tablero BI con tasa</text>
+    <text x="869" y="165" text-anchor="middle" font-size="10.5" fill="#166534">de retraso por</text>
+    <text x="869" y="180" text-anchor="middle" font-size="10.5" fill="#166534">transportista/clima/</text>
+    <text x="869" y="195" text-anchor="middle" font-size="10.5" fill="#166534">vehículo y mapa de</text>
+    <text x="869" y="210" text-anchor="middle" font-size="10.5" fill="#166534">riesgo por ruta</text>
+
+    <!-- 6 Decidir -->
+    <rect x="970" y="100" width="190" height="190" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+    <text x="1065" y="126" text-anchor="middle" font-weight="700" fill="#c2410c" font-size="13.5">6. Decidir</text>
+    <text x="1065" y="150" text-anchor="middle" font-size="10.5" fill="#9a3412">Reasignar rutas/</text>
+    <text x="1065" y="165" text-anchor="middle" font-size="10.5" fill="#9a3412">transportistas o</text>
+    <text x="1065" y="180" text-anchor="middle" font-size="10.5" fill="#9a3412">ajustar el tiempo</text>
+    <text x="1065" y="195" text-anchor="middle" font-size="10.5" fill="#9a3412">prometido en</text>
+    <text x="1065" y="210" text-anchor="middle" font-size="10.5" fill="#9a3412">condiciones de riesgo</text>
+
+  </g>
+
+  <g stroke="#334155" stroke-width="2" marker-end="url(#arrowD)">
+    <line x1="212" y1="195" x2="224" y2="195"/>
+    <line x1="398" y1="195" x2="410" y2="195"/>
+    <line x1="584" y1="195" x2="596" y2="195"/>
+    <line x1="770" y1="195" x2="782" y2="195"/>
+    <line x1="956" y1="195" x2="968" y2="195"/>
+  </g>
+
+  <!-- Big data / V panel -->
+  <rect x="40" y="320" width="1120" height="160" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="60" y="346" font-size="14" font-weight="700" fill="#0f172a">¿Es un caso de Big Data? — V críticas</text>
+
+  <text x="60" y="370" font-size="11.5" fill="#1e293b"><tspan font-weight="700" fill="#1d4ed8">Volumen:</tspan> 25 000 entregas y creciendo cada día con nuevas rutas y transportistas.</text>
+  <text x="60" y="390" font-size="11.5" fill="#1e293b"><tspan font-weight="700" fill="#be185d">Velocidad:</tspan> clima y GPS casi en tiempo real; la alerta solo sirve si llega antes de que el vehículo salga.</text>
+  <text x="60" y="410" font-size="11.5" fill="#1e293b"><tspan font-weight="700" fill="#15803d">Variedad:</tspan> tablas (Kaggle/ERP), JSON de clima/GPS, texto de quejas, fotos de entrega.</text>
+  <text x="60" y="430" font-size="11.5" fill="#1e293b"><tspan font-weight="700" fill="#b45309">Veracidad:</tspan> clima etiquetado puede no coincidir con el clima real por hora/zona (ver reto de calidad, Semana 2).</text>
+  <text x="620" y="370" font-size="11.5" fill="#1e293b"><tspan font-weight="700" fill="#6d28d9">Valor:</tspan> solo importa si se traduce en reasignar rutas o ajustar tiempos prometidos.</text>
+  <text x="620" y="396" font-size="12" font-weight="700" fill="#0f172a">Analítica aplicada: descriptiva (qué pasa) + predictiva (qué es probable que pase).</text>
+  <text x="620" y="416" font-size="11.5" fill="#1e293b">La combinación de volumen, velocidad, variedad y veracidad críticas confirma que sí es</text>
+  <text x="620" y="434" font-size="11.5" fill="#1e293b">un caso de Big Data y no un simple análisis tabular.</text>
+
+  <text x="600" y="504" text-anchor="middle" font-size="10.5" fill="#94a3b8">
+    Elaboración propia — basado en Provost &amp; Fawcett (2013); De Mauro et al. (2016); Bertsimas &amp; Kallus (2020)
+  </text>
+</svg>
