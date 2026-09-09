@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="260" fill="#ffffff"/>
+
+  <text x="500" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">
+    Diagrama simple del flujo de datos
+  </text>
+  <text x="500" y="50" text-anchor="middle" font-size="12.5" fill="#475569">
+    Caso: retrasos en entregas de última milla
+  </text>
+
+  <!-- 4 boxes: x 30,270,510,750 width 210 -->
+  <g font-size="12.5">
+
+    <rect x="30" y="80" width="210" height="130" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+    <text x="135" y="106" text-anchor="middle" font-weight="700" font-size="14" fill="#1d4ed8">Fuente</text>
+    <text x="135" y="130" text-anchor="middle" font-size="11" fill="#1e3a8a">Datos de cada entrega:</text>
+    <text x="135" y="147" text-anchor="middle" font-size="11" fill="#1e3a8a">transportista, distancia,</text>
+    <text x="135" y="164" text-anchor="middle" font-size="11" fill="#1e3a8a">clima y si llegó a</text>
+    <text x="135" y="181" text-anchor="middle" font-size="11" fill="#1e3a8a">tiempo o con retraso</text>
+
+    <rect x="270" y="80" width="210" height="130" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+    <text x="375" y="106" text-anchor="middle" font-weight="700" font-size="14" fill="#15803d">Almacenamiento</text>
+    <text x="375" y="130" text-anchor="middle" font-size="11" fill="#14532d">Se guardan todos los</text>
+    <text x="375" y="147" text-anchor="middle" font-size="11" fill="#14532d">registros en una base</text>
+    <text x="375" y="164" text-anchor="middle" font-size="11" fill="#14532d">de datos o en una hoja</text>
+    <text x="375" y="181" text-anchor="middle" font-size="11" fill="#14532d">de cálculo ordenada</text>
+
+    <rect x="510" y="80" width="210" height="130" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.6"/>
+    <text x="615" y="106" text-anchor="middle" font-weight="700" font-size="14" fill="#b45309">Análisis</text>
+    <text x="615" y="130" text-anchor="middle" font-size="11" fill="#78350f">Se calculan las tasas</text>
+    <text x="615" y="147" text-anchor="middle" font-size="11" fill="#78350f">de retraso y se busca</text>
+    <text x="615" y="164" text-anchor="middle" font-size="11" fill="#78350f">predecir el riesgo de</text>
+    <text x="615" y="181" text-anchor="middle" font-size="11" fill="#78350f">un envío nuevo</text>
+
+    <rect x="750" y="80" width="210" height="130" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+    <text x="855" y="106" text-anchor="middle" font-weight="700" font-size="14" fill="#6d28d9">Visualización</text>
+    <text x="855" y="130" text-anchor="middle" font-size="11" fill="#4c1d95">Un tablero o gráfico</text>
+    <text x="855" y="147" text-anchor="middle" font-size="11" fill="#4c1d95">muestra los resultados</text>
+    <text x="855" y="164" text-anchor="middle" font-size="11" fill="#4c1d95">para que el equipo</text>
+    <text x="855" y="181" text-anchor="middle" font-size="11" fill="#4c1d95">tome decisiones</text>
+
+  </g>
+
+  <g stroke="#334155" stroke-width="2.2" marker-end="url(#arrowP)">
+    <line x1="252" y1="145" x2="268" y2="145"/>
+    <line x1="492" y1="145" x2="508" y2="145"/>
+    <line x1="732" y1="145" x2="748" y2="145"/>
+  </g>
+
+  <text x="500" y="245" text-anchor="middle" font-size="11" fill="#94a3b8">Elaboración propia</text>
+</svg>
