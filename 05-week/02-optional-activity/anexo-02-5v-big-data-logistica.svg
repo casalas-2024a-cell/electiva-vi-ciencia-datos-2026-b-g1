@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <text x="600" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">
+    Las 5 V del Big Data aplicadas a retrasos de última milla
+  </text>
+  <text x="600" y="56" text-anchor="middle" font-size="13.5" fill="#475569">
+    Caso: transportista × clima × vehículo → probabilidad de retraso
+  </text>
+
+  <!-- 5 columns -->
+  <!-- x positions: 30,260,490,720,950 width 210 -->
+  <g font-size="12.5">
+
+    <!-- Volumen -->
+    <rect x="30" y="90" width="210" height="230" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+    <circle cx="135" cy="128" r="26" fill="#2563eb"/>
+    <text x="135" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Vol</text>
+    <text x="135" y="172" text-anchor="middle" font-weight="700" font-size="14" fill="#1d4ed8">Volumen</text>
+    <text x="135" y="196" text-anchor="middle" fill="#1e3a8a">25 000 entregas</text>
+    <text x="135" y="214" text-anchor="middle" fill="#1e3a8a">históricas, creciendo</text>
+    <text x="135" y="232" text-anchor="middle" fill="#1e3a8a">cada día con nuevas</text>
+    <text x="135" y="250" text-anchor="middle" fill="#1e3a8a">rutas y transportistas</text>
+    <rect x="46" y="270" width="178" height="34" rx="6" fill="#dbeafe"/>
+    <text x="135" y="291" text-anchor="middle" font-weight="700" fill="#1e40af">Crítica: media-alta</text>
+
+    <!-- Velocidad -->
+    <rect x="260" y="90" width="210" height="230" rx="12" fill="#fdf2f8" stroke="#db2777" stroke-width="1.6"/>
+    <circle cx="365" cy="128" r="26" fill="#db2777"/>
+    <text x="365" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Vel</text>
+    <text x="365" y="172" text-anchor="middle" font-weight="700" font-size="14" fill="#be185d">Velocidad</text>
+    <text x="365" y="196" text-anchor="middle" fill="#831843">Clima y ubicación</text>
+    <text x="365" y="214" text-anchor="middle" fill="#831843">GPS llegan casi en</text>
+    <text x="365" y="232" text-anchor="middle" fill="#831843">tiempo real vía API;</text>
+    <text x="365" y="250" text-anchor="middle" fill="#831843">decisión debe ser ágil</text>
+    <rect x="276" y="270" width="178" height="34" rx="6" fill="#fce7f3"/>
+    <text x="365" y="291" text-anchor="middle" font-weight="700" fill="#9d174d">Crítica: alta</text>
+
+    <!-- Variedad -->
+    <rect x="490" y="90" width="210" height="230" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+    <circle cx="595" cy="128" r="26" fill="#16a34a"/>
+    <text x="595" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Var</text>
+    <text x="595" y="172" text-anchor="middle" font-weight="700" font-size="14" fill="#15803d">Variedad</text>
+    <text x="595" y="196" text-anchor="middle" fill="#14532d">Tablas (Kaggle),</text>
+    <text x="595" y="214" text-anchor="middle" fill="#14532d">JSON de clima/GPS,</text>
+    <text x="595" y="232" text-anchor="middle" fill="#14532d">texto libre de quejas,</text>
+    <text x="595" y="250" text-anchor="middle" fill="#14532d">fotos de evidencia</text>
+    <rect x="506" y="270" width="178" height="34" rx="6" fill="#dcfce7"/>
+    <text x="595" y="291" text-anchor="middle" font-weight="700" fill="#166534">Crítica: alta</text>
+
+    <!-- Veracidad -->
+    <rect x="720" y="90" width="210" height="230" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.6"/>
+    <circle cx="825" cy="128" r="26" fill="#d97706"/>
+    <text x="825" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Ver</text>
+    <text x="825" y="172" text-anchor="middle" font-weight="700" font-size="14" fill="#b45309">Veracidad</text>
+    <text x="825" y="196" text-anchor="middle" fill="#78350f">Clima mal etiquetado</text>
+    <text x="825" y="214" text-anchor="middle" fill="#78350f">o desfasado, GPS</text>
+    <text x="825" y="232" text-anchor="middle" fill="#78350f">con huecos, tiempos</text>
+    <text x="825" y="250" text-anchor="middle" fill="#78350f">de entrega mal digitados</text>
+    <rect x="736" y="270" width="178" height="34" rx="6" fill="#fef3c7"/>
+    <text x="825" y="291" text-anchor="middle" font-weight="700" fill="#92400e">Crítica: muy alta</text>
+
+    <!-- Valor -->
+    <rect x="950" y="90" width="210" height="230" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+    <circle cx="1055" cy="128" r="26" fill="#7c3aed"/>
+    <text x="1055" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Val</text>
+    <text x="1055" y="172" text-anchor="middle" font-weight="700" font-size="14" fill="#6d28d9">Valor</text>
+    <text x="1055" y="196" text-anchor="middle" fill="#4c1d95">Solo es útil si se</text>
+    <text x="1055" y="214" text-anchor="middle" fill="#4c1d95">traduce en reasignar</text>
+    <text x="1055" y="232" text-anchor="middle" fill="#4c1d95">rutas o ajustar el</text>
+    <text x="1055" y="250" text-anchor="middle" fill="#4c1d95">tiempo prometido</text>
+    <rect x="966" y="270" width="178" height="34" rx="6" fill="#ede9fe"/>
+    <text x="1055" y="291" text-anchor="middle" font-weight="700" fill="#5b21b6">Crítica: alta</text>
+
+  </g>
+
+  <!-- Bottom panel: veracity challenge -->
+  <g>
+    <rect x="30" y="350" width="1140" height="230" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="52" y="380" font-size="15" font-weight="700" fill="#0f172a">Reto de veracidad seleccionado</text>
+
+    <text x="52" y="408" font-size="13" font-weight="700" fill="#92400e">Problema:</text>
+    <text x="52" y="428" font-size="12.5" fill="#1e293b">La columna de condición climática del dataset de Kaggle es un valor fijo por envío (ej. "Lluvia"), pero no indica</text>
+    <text x="52" y="446" font-size="12.5" fill="#1e293b">hora exacta ni intensidad; al cruzarla con una API de clima en tiempo real pueden aparecer inconsistencias:</text>
+    <text x="52" y="464" font-size="12.5" fill="#1e293b">un envío etiquetado como "despejado" que en realidad ocurrió bajo lluvia moderada según el registro horario real.</text>
+
+    <text x="52" y="496" font-size="13" font-weight="700" fill="#166534">Cómo detectarlo:</text>
+    <text x="52" y="516" font-size="12.5" fill="#1e293b">1) Cruzar la marca de tiempo de cada entrega con el histórico climático horario de la API para la misma zona/hora.</text>
+    <text x="52" y="534" font-size="12.5" fill="#1e293b">2) Calcular el % de discrepancia entre el clima reportado en Kaggle y el clima real de la API por franja horaria.</text>
+    <text x="52" y="552" font-size="12.5" fill="#1e293b">3) Marcar como "sospechosos" los registros con distancia/tiempo estimado fuera de rango físicamente posible</text>
+    <text x="52" y="568" font-size="12.5" fill="#1e293b">   (p. ej. velocidad implícita &gt; 120 km/h para una motocicleta urbana) y auditarlos antes de entrenar el modelo.</text>
+  </g>
+
+  <text x="600" y="608" text-anchor="middle" font-size="11" fill="#94a3b8">
+    Elaboración propia — basado en Laney (2001); Ishwarappa &amp; Anuradha (2015); De Mauro et al. (2016); Cai &amp; Zhu (2015)
+  </text>
+</svg>
