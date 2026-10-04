@@ -1,0 +1,49 @@
+erDiagram
+    DELIVERY_PARTNER ||--o{ DELIVERY : "realiza"
+    VEHICLE_TYPE     ||--o{ DELIVERY : "se usa en"
+    PACKAGE_TYPE     ||--o{ DELIVERY : "clasifica"
+    DELIVERY_MODE    ||--o{ DELIVERY : "define el plazo de"
+    REGION           ||--o{ DELIVERY : "recibe"
+    WEATHER_CONDITION ||--o{ DELIVERY : "afecta a"
+
+    DELIVERY_PARTNER {
+        int partner_id PK
+        string partner_name UK
+    }
+    VEHICLE_TYPE {
+        int vehicle_type_id PK
+        string vehicle_name UK
+    }
+    PACKAGE_TYPE {
+        int package_type_id PK
+        string package_name UK
+    }
+    DELIVERY_MODE {
+        int mode_id PK
+        string mode_name UK
+    }
+    REGION {
+        int region_id PK
+        string region_name UK
+    }
+    WEATHER_CONDITION {
+        int weather_id PK
+        string condition_name UK
+    }
+    DELIVERY {
+        int delivery_id PK
+        int partner_id FK
+        int vehicle_type_id FK
+        int package_type_id FK
+        int mode_id FK
+        int region_id FK
+        int weather_id FK
+        float distance_km
+        float package_weight_kg
+        int delivery_time_hours
+        int expected_time_hours
+        boolean is_delayed
+        string delivery_status
+        int delivery_rating
+        float delivery_cost
+    }
