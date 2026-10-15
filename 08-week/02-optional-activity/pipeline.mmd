@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph F[1. Fuentes]
+        S1[Rastreo GPS<br/>eventos de posición]
+        S2[Registro de entregas<br/>CSV]
+        S3[API Frankfurter<br/>JSON]
+    end
+    subgraph E[2. Extraer]
+        E1[Apache Kafka<br/>tópico eventos_ruta]
+        E2[pandas.read_csv]
+        E3[requests]
+    end
+    subgraph T[3. Transformar]
+        T1[Python consumidor<br/>alerta de plazo]
+        T2[pandas limpieza.py]
+        T3[pandas / dbt<br/>convertir costo a USD]
+    end
+    subgraph L[4. Cargar]
+        L1[(PostgreSQL<br/>alertas)]
+        L2[(SQLite → PostgreSQL<br/>modelo normalizado)]
+    end
+    BI[5. BI<br/>Power BI / Metabase]
+
+    S1 --> E1 --> T1 --> L1 --> BI
+    S2 --> E2 --> T2 --> L2 --> BI
+    S3 --> E3 --> T3 --> L2
+
+    AF{{Apache Airflow<br/>orquesta la carga diaria}} -.-> E2
+    AF -.-> E3
+
+    classDef stream fill:#fdeede,stroke:#c4650a,stroke-width:2px;
+    classDef batch fill:#e2f1f3,stroke:#0b6e75,stroke-width:2px;
+    class S1,E1,T1,L1 stream;
+    class S2,E2,T2,L2,S3,E3,T3 batch;
