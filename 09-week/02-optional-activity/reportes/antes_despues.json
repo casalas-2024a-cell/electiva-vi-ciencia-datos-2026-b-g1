@@ -1,0 +1,66 @@
+{
+  "antes": {
+    "etiqueta": "antes",
+    "filas": 25000,
+    "columnas": 15,
+    "filas_duplicadas_exactas": 0,
+    "celdas_nulas": 0,
+    "delivery_id_repetidos": 498,
+    "delivery_id_distintos": 24502,
+    "delivery_id_no_enteros": 500,
+    "columnas_de_tiempo_guardadas_como_fecha_1970": 2,
+    "valores_costo_con_mas_de_2_decimales": 500,
+    "valores_topados": {
+      "distance_km": 510,
+      "package_weight_kg": 508,
+      "delivery_cost": 500
+    },
+    "delayed_distintos": [
+      "no",
+      "yes"
+    ]
+  },
+  "despues": {
+    "etiqueta": "después",
+    "filas": 25000,
+    "columnas": 19,
+    "filas_duplicadas_exactas": 0,
+    "celdas_nulas": 0,
+    "delivery_id_repetidos": 0,
+    "delivery_id_distintos": 25000,
+    "delivery_id_no_enteros": 0,
+    "id_reconstruido": 500,
+    "marcados_en_tope": {
+      "distancia_en_tope": 510,
+      "peso_en_tope": 508,
+      "costo_en_tope": 500
+    },
+    "tipos": {
+      "delivery_id": "int64",
+      "delivery_partner": "str",
+      "package_type": "str",
+      "vehicle_type": "str",
+      "delivery_mode": "str",
+      "region": "str",
+      "weather_condition": "str",
+      "distance_km": "float64",
+      "package_weight_kg": "float64",
+      "delivery_time_hours": "int64",
+      "expected_time_hours": "int64",
+      "delayed": "bool",
+      "delivery_status": "str",
+      "delivery_rating": "int64",
+      "delivery_cost": "float64",
+      "id_reconstruido": "bool",
+      "distancia_en_tope": "bool",
+      "peso_en_tope": "bool",
+      "costo_en_tope": "bool"
+    },
+    "inconsistencias_detectadas_no_corregidas": {
+      "delayed_pero_dentro_del_plazo": 1203,
+      "fallidas_con_tiempo_de_entrega": 1328,
+      "express_con_plazo_8h": 8,
+      "entregadas_fuera_de_plazo": 0
+    }
+  }
+}
